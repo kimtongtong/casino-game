@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Casino game</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="coin">🎁</div>
+    <div id="quest-box">
+      <p class="count"></p>
+      <h1>Range is 0 ~ 50</h1>
+    </div>
+
+    <input id="start-button" type="button" value="Press start" />
+    <form class="casino-form hidden">
+      <input
+        class="casino-input"
+        type="text"
+        placeholder="What is your number?"
+        required
+        maxlength="2"
+      />
+      <input class="casino-submit" type="submit" value="OK" />
+    </form>
+    <p class="info">1. 0~50까지 숫자를 맞추는 게임</p>
+    <p class="info">0~50までのランダム数字を当てるゲーム</p>
+    <p class="info">2. 틀릴 때 마다 개수가 카운트 된다.</p>
+    <p class="info">間違うとき回数がカウントされる</p>
+    <script src="script.js"></script>
+  </body>
+</html>
