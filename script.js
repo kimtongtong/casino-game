@@ -36,12 +36,12 @@ function onInputValue(event) {
         onGameStart();
         gameStart.addEventListener("click", reStart);
     } else if(numberValue < questNumber) {
-        casinoTest.innerText = "Lower"
+        casinoTest.innerText = "Higher"
         wrongCount++;
         casinoCount.innerText = "count:" + wrongCount;
         casinoTest.style.fontSize = "30px";
     } else if(numberValue > questNumber)  {
-        casinoTest.innerText = "higher"
+        casinoTest.innerText = "Lower"
         wrongCount++;
         casinoCount.innerText = "count:" + wrongCount;
         casinoTest.style.fontSize = "30px";
